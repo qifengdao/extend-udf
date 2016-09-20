@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>extend.udf</groupId>
+	<artifactId>extend-udf</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0</version>
+	<name>extend-udf</name>	 
+    <dependencies>
+     <dependency>
+              <artifactId>hive-exec</artifactId>
+              <groupId>org.apache.hive</groupId>
+               <version>2.0.1</version>
+     </dependency>
+     </dependencies>
+</project>
