@@ -1,9 +1,10 @@
 # extend-udf
 
-#1 bulid and put jar to hdfs 
+#1 Bulid project and put jar to hdfs 
 mvn package
+
 hadoop fs -put extend-udf-1.0.jar hdfs://namenode:9000/hive/
-#2 load function
+#2 Load function
 
 add jar hdfs://namenode:9000/hive/extend-udf-1.0.jar;
 
@@ -15,7 +16,7 @@ CREATE TEMPORARY FUNCTION countdist AS 'extend.udf.CountDistinct';
 
 describe function getid4url;
 
-#3 use function
+#3 Use function
 
 select parseip('61.178.58.10');
 
