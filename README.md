@@ -6,6 +6,7 @@ mvn package
 hadoop fs -put extend-udf-1.0.jar hdfs://namenode:9000/hive/
 
 hadoop fs -put ip.txt hdfs://namenode:9000/hive/
+
 ip.txt为纯真ip库，需要自己下载整理，本项目中只提供部分例子
 
 hadoop fs -put channel.txt hdfs://namenode:9000/hive/
