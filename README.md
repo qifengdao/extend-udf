@@ -29,6 +29,12 @@ CREATE TEMPORARY FUNCTION countdist AS 'extend.udf.CountDistinct';
 
 describe function getid4url;
 
+查看array2中元素是否全部在array1中存在
+CREATE TEMPORARY FUNCTION array_contains_all as 'extend.udf.GenericUDFArrayContainsAll';
+
+查看array2中元素是否有至少有一个在array1中
+CREATE TEMPORARY FUNCTION array_contains_either as 'com.hylinkad.dmp.udf.GenericUDFArrayContainsEither';
+
 #3 Use function
 
 select parseip('61.178.58.10');
@@ -36,5 +42,9 @@ select parseip('61.178.58.10');
 select getid4url('http://www.baidu.com?v=1');
 
 select countdist('192.168.1.1,192.168.2.1');
+
+select array_contains_all(array1,array2);
+
+select array_contains_either(array1,array2);
 
 
