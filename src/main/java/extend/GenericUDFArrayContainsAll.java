@@ -13,7 +13,7 @@ import org.apache.hadoop.hive.serde2.objectinspector.primitive.PrimitiveObjectIn
 import org.apache.hadoop.io.BooleanWritable;
 
 /**
- * GenericUDFArrayContains.
+ * GenericUDFArrayContainsAll.
  *
  */
 @Description(name = "array_contains_all",
